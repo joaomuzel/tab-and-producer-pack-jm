@@ -13,7 +13,7 @@
         img#logo{
             width: 63px;
             height: 63px;
-            left: 100px;
+            left: 70px;
         }
         span#letra{
             color: black;
@@ -26,12 +26,15 @@
 <body>
     
     <nav class="#212121 grey darken-4">
-    <div class="nav-wrapper">
+    <div class="nav-wrapper container">
       <a href="#" class="brand-logo"><img id="logo" src="images/logo-joao-muzel.png" class="brand-logo"></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="#">Tab Pack</a></li>
         <li><a href="#">Producer Pack</a></li>
       </ul>
+        
+        
+        
     </div>
   </nav>
     <div class="center container">
@@ -76,5 +79,17 @@
    </div> 
     <!--JavaScript at end of body for optimized loading-->
       <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+    </script>
 </body>
 </html>
