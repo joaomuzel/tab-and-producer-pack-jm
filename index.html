@@ -20,7 +20,7 @@
             font-weight: bold;
         }
         a#letra{
-           font-weight: bold; 
+            font-family: monospace;
         }
 
     </style>
@@ -30,7 +30,7 @@
     
     <nav class="#212121 grey darken-4">
     <div class="nav-wrapper container">
-        <a id="letra" href="#" class="brand-logo center">MÜZEL STORE</a>
+        <a id="letra" href="#" class="brand-logo center">Müzel Store</a>
       <a href="#" class="brand-logo"></a><img id="logo" src="images/logo-joao-muzel.png" class="brand-logo">
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="#">Tab Pack</a></li>
@@ -46,13 +46,13 @@
 
 
 <img class="responsive-img" src="images/banner-tab-producer-pack-animal-jm.png">
-
+       <br><br>
         
-        <div class="video-container">
+        <div class="video-container col s12">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/NHTP-qLQL4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <br>
-        <br>
+ 
         
         <div class="row">
     <div class="grid-example col s12 m6">
@@ -124,9 +124,26 @@ Espero muito que você goste e aproveite bastante!<br>
     </div>
       </div>
     </div>
-  </div>
+            <br>
+            
         
    </div> 
+        
+        <ul class="collapsible">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">shopping_cart</i>Onde comprar?</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">file_download</i>Como baixar?</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">touch_app</i>Como usar?</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+  </ul>
+  </div>
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -137,7 +154,9 @@ Espero muito que você goste e aproveite bastante!<br>
   $(document).ready(function(){
     $('.slider').slider();
   });
-            
+         $(document).ready(function(){
+    $('.collapsible').collapsible();
+  });   
             
     </script>
 </body>
